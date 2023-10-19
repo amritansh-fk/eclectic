@@ -1,0 +1,177 @@
+@import "../../../mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+.heroBanner {
+    width: 100%;
+    height: 450px;
+    // background-color: var(--black);
+    // display: flex;
+    align-items: center;
+    position: relative;
+    @include sm {
+        height: 600px;
+    }
+    @include md {
+        height: 700px;
+    }
+    .backdrop-img {
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+        top: 0;
+        left: 0;
+        // opacity: 0.5;
+        overflow: hidden;
+        .lazy-load-image-background {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .heroBannerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        .title {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @include md {
+                margin-bottom: 0;
+                font-size: 90px;
+            }
+        }
+        .subTitle {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            @include md {
+                font-size: 24px;
+            }
+        }
+        .brandName {
+            font-size: 80px;
+            font-weight: 500;
+            margin-top: 280px;
+            // margin-bottom: 70px;
+            letter-spacing: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            @include md {
+                font-size: 80px;
+            }
+        }
+        .brandTitle {
+            font-size: 20px;
+            font-weight: 500;
+            // margin-top: -70px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            @include md {
+                font-size: 20px;
+            }
+        }
+        .brandImage {
+            width: 40%;
+            height: 100%;
+            // width: 334px;
+            // height: 44px;
+            // position: absolute;
+            top: 0;
+            // padding-right: 5px;
+            // opacity: 0.5;
+            overflow: hidden;
+            .lazy-load-image-background {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+        .brandVideo {
+            width: 100%;
+            height: 300px;
+            @include sm {
+                height: 400px;
+            }
+        }
+        .searchInput {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            input {
+                width: calc(100% - 100px);
+                height: 50px;
+                background-color: #D9D9D9;
+                outline: 0;
+                // border: 0;
+                border: 2px solid black;
+                // border-radius: 30px 0 0 30px;
+                padding: 0 15px;
+                font-size: 14px;
+                @include md {
+                    width: calc(100% - 150px);
+                    height: 60px;
+                    font-size: 20px;
+                    padding: 0 30px;
+                }
+                border-radius: 10px 0 0 10px;
+                box-shadow: 4.1px 18.2px 18.2px hsl(0deg 0% 0% / 0.37);
+                // box-shadow:
+                //     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                //     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                //     0 12.5px 10px rgba(0, 0, 0, 0.06),
+                //     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                //     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                //     0 100px 80px rgba(0, 0, 0, 0.12);
+            }
+            button {
+                // box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+                box-shadow: 4.1px 18.2px 18.2px hsl(0deg 0% 0% / 0.37);
+                // box-shadow:
+                //     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                //     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                //     0 12.5px 10px rgba(0, 0, 0, 0.06),
+                //     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                //     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                //     0 100px 80px rgba(0, 0, 0, 0.12);
+                width: 100px;
+                height: 50px;
+                // background: var(--gradient);
+                background: black;
+                color: white;
+                outline: 0;
+                border: 0;
+                // border-radius: 0 30px 30px 0;
+                font-size: 16px;
+                cursor: pointer;
+                @include md {
+                    width: 150px;
+                    height: 60px;
+                    font-size: 18px;
+                }
+                border-radius: 0 10px 10px 0;
+
+                &:hover{
+                    transition-duration: 0.2s;
+                    background: #413f3f;
+                }
+            }
+        }
+    }
+}
