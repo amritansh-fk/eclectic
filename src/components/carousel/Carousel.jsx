@@ -21,7 +21,7 @@ const Card = ({name}) => {
             <Img src={cardimg} />
             <div className="textBlock">
                 <div className="price">{name}</div>
-                <div className="price">Name</div>
+                <div className="price">Hammer Price : £100</div>
             </div>
         </div>
     </div>
@@ -71,11 +71,11 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                 />
 
                 <div className="carouselItems" ref={carouselContainer}>
-                    <Card name = "Hammer Price 1"></Card>
-                    <Card name = "Hammer Price 2"></Card>
-                    <Card name = "Hammer Price 3"></Card>
-                    <Card name = "Hammer Price 4"></Card>
-                    <Card name = "Hammer Price 5"></Card>
+                    <Card name = "WW II British medal"></Card>
+                    <Card name = "18th Century Lamp"></Card>
+                    <Card name = "WW II British medal"></Card>
+                    <Card name = "18th Century Lamp"></Card>
+                    <Card name = "WW II British medal"></Card>
                 </div>
                 
             </ContentWrapper>
