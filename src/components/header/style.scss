@@ -16,8 +16,7 @@
     transition: all ease 0.5s;
     z-index: 2;
     &.top {
-        background: rgba(0, 0, 0, 0.25);
-        // background: rgba(109, 88, 88, 0.25);
+        background: black;
         backdrop-filter: blur(3.5px);
         -webkit-backdrop-filter: blur(3.5px);
     }
@@ -58,8 +57,7 @@
             margin: 0 15px;
             justify-content: space-between;
             margin-left: 80px;
-            // color: white;
-            color: black;
+            color: white;
             font-weight: 500;
             position: relative;
             // border-bottom: 2px solid black;
@@ -163,8 +161,7 @@
         svg {
             cursor: pointer;
             font-size: 18px;
-            // color: white;
-            color: black;
+            color: white;
             margin: 100px auto;
             position: relative; 
             // left: -50px;
@@ -173,15 +170,14 @@
     }
 
     &.mobileView {
-        // background: var(--black3);
-        background: gray;
+        background: black;
         cursor: pointer;
         .menuItems {
             display: flex;
             position: absolute;
             top: 60px;
             left: 0;
-            background: gray;
+            background: black;
             flex-direction: column;
             width: 100%;
             padding: 20px 0;

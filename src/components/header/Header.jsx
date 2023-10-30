@@ -71,11 +71,11 @@ const Header = ({activeTab}) => {
             <ul className="menuItems">
               
               <li className={`menuItem ${activeTab=='homeTab'?'activeTab3':''}`} onClick={() => navigationHandler("/")}>
-                Home
-              </li>
-              <li className={`menuItem ${activeTab=='priceGuideTab'?'activeTab3':''}`} onClick={() => navigationHandler("movie")}>
                 Price Guide
               </li>
+              {/* <li className={`menuItem ${activeTab=='priceGuideTab'?'activeTab3':''}`} onClick={() => navigationHandler("movie")}>
+                Price Guide
+              </li> */}
               <li className={`menuItem ${activeTab=='detailsTab'?'activeTab3':''}`} onClick={() => navigationHandler("tv")}>
                 Lottery
               </li>

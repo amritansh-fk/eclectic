@@ -10,7 +10,7 @@ import dayjs from "dayjs";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import Img from "../lazyLoadImage/Img";
 import cardimg from "../../../public/cardimg.png"
-
+import { VscChromeClose } from "react-icons/vsc";
 
 import "./style.scss";
 
@@ -18,6 +18,9 @@ const Card = ({name}) => {
     return (
     <div className="carouselItem">
         <div className="posterBlock">
+        <div className="crossCont">
+            <VscChromeClose className="cross-margin"> </VscChromeClose>
+        </div>
             <Img src={cardimg} />
             <div className="textBlock">
                 <div className="price">{name}</div>

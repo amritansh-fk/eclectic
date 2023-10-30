@@ -41,8 +41,17 @@ const HeroBanner = () => {
   return (
     <div className="heroBanner">
       {/* <div className="backdrop-img">
-        <Img src = "https://i.ibb.co/Gk31RWQ/Original-PSD-File-Copy.png"></Img>
+        <Img src = "https://i.imgur.com/qwE9Gmg.mp4"></Img>
       </div> */}
+      
+      <div className="brandVid">
+        <LazyLoadComponent>
+          <video className="brandVideo1" autoPlay muted playsInline ref = {ref} onMouseOver={event => event.target.play()}>
+            <source src="https://i.imgur.com/gwIP9D4.mp4" type="video/mp4" />
+          </video>
+        </LazyLoadComponent>
+      </div>
+      
       <ContentWrapper>
         <div className="heroBannerContent">
           {/* <span className="subTitle">GUUCHU</span> */}
@@ -58,11 +67,6 @@ const HeroBanner = () => {
           </video> */}
 
           {/* Cropped Image */}
-          <LazyLoadComponent>
-            <video className="brandVideo" autoPlay muted playsInline ref = {ref} onMouseOver={event => event.target.play()}>
-              <source src="https://i.imgur.com/qwE9Gmg.mp4" type="video/mp4" />
-            </video>
-          </LazyLoadComponent>
           
 
           <span className="brandTitle">Find out what your antiques are worth</span>
