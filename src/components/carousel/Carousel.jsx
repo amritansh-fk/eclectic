@@ -60,8 +60,10 @@ const Carousel = ({ data, loading, endpoint, title }) => {
     return (
         <div className="carousel">
             <ContentWrapper>
-                
-                <div className="carouselTitle">Recently viewed lots</div>
+                <div className="carouselTitleParent">
+                    <div className="carouselTitle">Recently viewed lots</div>
+                    <div className="carouselTitleClear">Clear All</div>
+                </div>
                 
                 <BsFillArrowLeftCircleFill
                     className="carouselLeftNav arrow"
