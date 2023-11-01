@@ -99,6 +99,9 @@
                 width: calc(20% - 16px);
             }
             flex-shrink: 0;
+            &:hover {
+                box-shadow: 14.1px 28.2px 28.2px hsl(0deg 0% 0% / 0.37);
+            }
             .posterBlock {
                 position: relative;
                 border-radius: 17px;
