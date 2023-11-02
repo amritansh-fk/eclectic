@@ -223,7 +223,9 @@
     .signUpBtn{ 
         margin-left: 30px;
         margin-right: 10px;
-        background-color: #58E725;
+        // background-color: #58E725;
+        background-color: white;
+        color: black;
         width: 100px;
         height: 30px;
         border-radius: 15px 0 15px 0;
@@ -236,12 +238,15 @@
     }
 
     .signInBtn{ 
-        background-color: #8B9587;
+        // background-color: #8B9587;
+        background-color: #C0C0C0;
+        color: black;
     }
 
     .signInBtn:hover {
         transition-duration: 0.2s;
-        background-color: #c5d2c0;
+        // background-color: #c5d2c0;
+        background-color: #74f843;
     }
 
     .signBtn{ 

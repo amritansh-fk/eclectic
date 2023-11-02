@@ -18,7 +18,7 @@
     }
     .carouselTitleClear {
         font-size: 16px;
-        color: blue;
+        color: black;
         margin-bottom: 20px;
         font-weight: normal;
         float: right;
@@ -55,9 +55,24 @@
         cursor: pointer;
         opacity: 0.5;
         z-index: 1;
+        // display: none;
+        // @include md {
+        //     display: block;
+        // }
         display: none;
-        @include md {
-            display: block;
+        &.showAll {
+            @include md {
+                display: block;
+            }
+        }
+        &.showMed {
+            display: none;
+            @include md {
+                display: block;
+            }
+            @include lg {
+                display: none;
+            }
         }
         &:hover {
             opacity: 0.8;
@@ -188,6 +203,10 @@
                     }
                 }
             }
+            
+        }
+        .carouselItemhide {
+            display: none;
             
         }
     }

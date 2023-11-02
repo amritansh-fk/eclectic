@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, forwardRef, useState } from "react";
 import {
     BsFillArrowLeftCircleFill,
     BsFillArrowRightCircleFill,
@@ -14,11 +14,49 @@ import { VscChromeClose } from "react-icons/vsc";
 
 import "./style.scss";
 
-const Card = ({name}) => {
+const cardData = [
+    {
+        "id":0,
+        "name": "WW II British medal",
+        "Hammer Price" : "£100"
+    },
+    {
+        "id":1,
+        "name": "18th Century Lamp",
+        "Hammer Price" : "£100"
+    },
+    {
+        "id":2,
+        "name": "WW II British medal",
+        "Hammer Price" : "£100"
+    },
+    {
+        "id":3,
+        "name": "18th Century Lamp",
+        "Hammer Price" : "£100"
+    },
+    {
+        "id":4,
+        "name": "WW II British medal",
+        "Hammer Price" : "£100"
+    },
+    {
+        "id":5,
+        "name": "WW II British medal",
+        "Hammer Price" : "£100"
+    },
+]
+
+const Card = forwardRef((props, ref) => {
+    const {id,recentCards,name, setRecentCards} = props;
+    const [show,setShow] = useState(true);
+    const removeCard = (key) => {
+        setRecentCards(recentCards.filter((data)=> data.id!=key))
+    }
     return (
-    <div className="carouselItem">
+    <div className={`carouselItem${show ? "" : "hide" }` } ref = {ref}>
         <div className="posterBlock">
-        <div className="crossCont">
+        <div className="crossCont" onClick={()=>removeCard(id)}>
             <VscChromeClose className="cross-margin"> </VscChromeClose>
         </div>
             <Img src={cardimg} />
@@ -29,10 +67,11 @@ const Card = ({name}) => {
         </div>
     </div>
     );
-};
+});
 
 const Carousel = ({ data, loading, endpoint, title }) => {
     const carouselContainer = useRef();
+    const cardRef = useRef();
     const navigate = useNavigate();
 
     const reftest = useRef();
@@ -56,34 +95,39 @@ const Carousel = ({ data, loading, endpoint, title }) => {
         console.log(scrollAmount);
         console.log(container.offsetWidth + 20);
     };
+    const [recentCards, setRecentCards] = useState(cardData);
+    const showCards = recentCards.length!=0;
+    
 
+    const arrowClass = recentCards.length>5 ? "showAll": recentCards.length===5 ? "showMed": "";
+    
     return (
         <div className="carousel">
+            {showCards &&
             <ContentWrapper>
+            
                 <div className="carouselTitleParent">
                     <div className="carouselTitle">Recently viewed lots</div>
-                    <div className="carouselTitleClear">Clear All</div>
+                    <div className="carouselTitleClear" onClick={()=> setRecentCards([])}>Clear All</div>
                 </div>
                 
                 <BsFillArrowLeftCircleFill
-                    className="carouselLeftNav arrow"
+                    className={`carouselLeftNav arrow ${arrowClass}`}
                     onClick={() => navigation("left")}
                 />
                 
                 <BsFillArrowRightCircleFill
-                    className="carouselRighttNav arrow"
+                    className={`carouselRighttNav arrow ${arrowClass}`}
                     onClick={() => navigation("right")}
                 />
-
+                                
                 <div className="carouselItems" ref={carouselContainer}>
-                    <Card name = "WW II British medal"></Card>
-                    <Card name = "18th Century Lamp"></Card>
-                    <Card name = "WW II British medal"></Card>
-                    <Card name = "18th Century Lamp"></Card>
-                    <Card name = "WW II British medal"></Card>
+                    {recentCards.map((data)=>{
+                        return <Card key={data.id} name = {data.name} setRecentCards = {setRecentCards} id = {data.id} recentCards = {recentCards} ref = {cardRef}></Card>
+                    })}
                 </div>
-                
             </ContentWrapper>
+            }
         </div>
     );
 };
