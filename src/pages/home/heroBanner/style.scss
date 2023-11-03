@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 .heroBanner {
     width: 100%;
-    height: 450px;
+    height: 350px;
     // background-color: var(--black);
     // display: flex;
     align-items: center;
     position: relative;
     top: 40px;
     @include sm {
-        height: 600px;
+        height: 500px;
         top: 0;
     }
     @include md {
-        height: 600px;
+        height: 500px;
     }
     .backdrop-img {
         width: 100%;
