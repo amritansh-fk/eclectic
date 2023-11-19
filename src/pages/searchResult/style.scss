@@ -240,8 +240,17 @@
         margin-left: 35px;
         margin-right: 20px;        
         .topBar{
-            display: flex;
-            justify-content: space-between;            
+            @include md{
+                display: flex;
+                justify-content: space-between;
+            }
+            .filterAndSort{
+                display: flex;
+                justify-content: space-between;
+                @include md{
+                    display: block;
+                }
+            }
         }
         .sortByDiv
         {
