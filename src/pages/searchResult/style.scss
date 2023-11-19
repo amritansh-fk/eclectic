@@ -1,0 +1,648 @@
+@import "../../mixins.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.searchResultsPage {
+    min-height: 700px;
+    padding-top: 100px;
+    .pageTitle {
+        font-size: 16px;
+        line-height: 34px;
+        color: black;
+        margin-bottom: 25px;
+        margin-left: 25px auto;
+        @include md{
+            font-size: 20px;
+        }
+    }
+    .content {
+        flex-flow: row wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+        @include md {
+            gap: 20px;
+        }
+        .movieCard {
+            .posterBlock {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .filterSection {
+        margin-left: 0px;
+        font-size: 24px;
+        line-height: 34px;
+        // background-color: pink;
+        background-color: white;
+        height: 100%;
+        
+        border-radius: 10px;
+        box-shadow: 0 0 38.2px hsla(0, 0%, 0%, 0.37);
+        margin-left: 10px;
+        margin-top: 60px;
+
+        // width: 2350px;
+        // padding-left: 100px;
+        width: 300px;
+        // width: 100%;
+        flex-shrink: 0;
+        display: none;
+        @include xl{
+            display: block;
+        }
+        .filterHeading {
+            text-align: center;
+            padding-top: 20px;
+            font-weight: 700;
+        }
+        .filter-header h3{
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 12px;
+            margin-bottom: 15px;
+        }
+
+
+
+        .customEstimateFacet {
+            padding-left: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: justify;
+        }
+        .side-filter{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 14px;
+            border: 2px solid #7a7a7a;
+            height: 40px;
+            width: 100%;
+            // width: 100px;
+            color: #222;
+            border-radius: 0;
+            padding: 0 20px 0 8px;
+            margin-left: 10px;
+            border-radius: 10px;
+            margin-right: 12px;
+            
+            // hide defualut arrows in input form
+            -moz-appearance: textfield;
+        }
+        // hide defualut arrows in input form
+        .side-filter::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+        .toLabel {
+            margin-left: 3px;
+            margin-right: 3px;
+        }    
+
+
+        .auctionHouseInput{
+            margin-left: 10px;
+            padding-top: 15px;
+            width: 70%;
+            border: 2px solid #7a7a7a;
+            height: 35px;
+            padding: 0 0 0 5px;
+            border-radius: 10px;
+            font-size: 14px;
+
+        }
+
+        .inputSearch{
+            position: absolute;
+            left: 200px;
+            padding-top: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            font-size: 18px;
+            label{
+                margin-left: 5px;
+            }
+            input{
+            }
+        }
+        .auctionHouseNames{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .auctionHouseShowMore{
+            background-color: #fff;
+            border: none;
+            margin-left: 45px;
+            padding-top: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            &:hover{
+                color: blue;
+            }
+            .showMoreButton{
+                position: relative;
+                font-size: 17px;
+                top: 4px;
+                left: 3px;
+            }
+        }
+
+
+
+
+
+/* STYLE B */
+
+.checkbox.style-b {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .checkbox.style-b input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox.style-b input:checked ~ .checkbox__checkmark {
+    background-color: #fff;
+  }
+  .checkbox.style-b input:checked ~ .checkbox__checkmark:after {
+    opacity: 1;
+  }
+  .checkbox.style-b:hover input ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-b:hover input:checked ~ .checkbox__checkmark {
+    background-color: #fff;
+  }
+  .checkbox.style-b .checkbox__checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #333;
+    transition: background-color 0.25s ease;
+    border-radius: 4px;
+  }
+  .checkbox.style-b .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .checkbox.style-b .checkbox__body {
+    color: #333;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+    }
+    .searchCardsDiv {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-left: 35px;
+        margin-right: 20px;        
+        .topBar{
+            display: flex;
+            justify-content: space-between;            
+        }
+        .sortByDiv
+        {
+            // background-color: blue;
+            margin-right: 10px;
+            &:hover{
+                color: blue;
+                cursor: pointer;
+            }
+        }
+        .filters-button{
+            background-color: white;
+            color: black;
+            font-weight: 450;
+            // border: none;
+
+        }
+    }
+    .par {
+        display: flex;
+    }
+    .searchInput {
+        display: flex;
+        align-items: center;
+        // width: 100%;
+        input {
+            width: calc(100% - 100px);
+            height: 50px;
+            background-color: #D9D9D9;
+            outline: 0;
+            // border: 0;
+            border: 2px solid black;
+            // border-radius: 30px 0 0 30px;
+            padding: 0 15px;
+            font-size: 9px;
+            @include sm {
+                font-size: 14px;
+            }
+            @include md {
+                width: calc(100% - 150px);
+                height: 60px;
+                font-size: 20px;
+                padding: 0 30px;
+            }
+            border-radius: 10px 0 0 10px;
+            box-shadow: 4.1px 18.2px 18.2px hsl(0deg 0% 0% / 0.37);
+            // box-shadow:
+            //     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            //     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            //     0 12.5px 10px rgba(0, 0, 0, 0.06),
+            //     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            //     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            //     0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+        button {
+            // box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+            box-shadow: 4.1px 18.2px 18.2px hsl(0deg 0% 0% / 0.37);
+            // box-shadow:
+            //     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            //     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            //     0 12.5px 10px rgba(0, 0, 0, 0.06),
+            //     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            //     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            //     0 100px 80px rgba(0, 0, 0, 0.12);
+            width: 100px;
+            height: 50px;
+            // background: var(--gradient);
+            background: black;
+            color: white;
+            outline: 0;
+            border: 0;
+            // border-radius: 0 30px 30px 0;
+            font-size: 16px;
+            cursor: pointer;
+            @include md {
+                width: 150px;
+                height: 60px;
+                font-size: 18px;
+            }
+            border-radius: 0 10px 10px 0;
+
+            &:hover{
+                transition-duration: 0.2s;
+                background: #413f3f;
+            }
+        }
+        max-width: 1200px;
+        // width: 100%;
+        margin: 0 auto;
+        // margin-left: 340px;
+        margin-left: 40px;
+        // margin-left: 19%;
+        // margin-right: 20px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+
+        @include xl{
+            margin-left: 340px;
+        }
+    }
+}
+
+
+.ui.selection.dropdown {
+    height: 1em;
+    min-width: 7em;
+    border:none;
+    cursor: pointer;
+    color: black;
+}
+.ui.dropdown:not(.button)>.default.text {
+    color: black;
+}
+.ui.selection.dropdown::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    top: 23px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+.ui.selection.dropdown:hover::before {
+    transform: scaleX(1);
+}
+.filterBtn{
+    // margin-left: -400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filterSection {
+    margin-left: 0px;
+    font-size: 24px;
+    line-height: 34px;
+    background-color: white;
+    height: 100%;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 38.2px hsla(0, 0%, 0%, 0.37);
+    // margin-left: 10px;
+    // margin-left: 30%;
+    margin-top: 60px;
+
+    width: 300px;
+    width: 100%;
+    // flex-shrink: 0;
+    // display: none;
+    @include xl{
+        display: block;
+    }
+    .filterHeading {
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 700;
+    }
+    .filter-header h3{
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 12px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .customEstimateFacet {
+        padding-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: justify;
+    }
+    .side-filter{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 14px;
+        border: 2px solid #7a7a7a;
+        height: 40px;
+        // width: 100%;
+        width: 30%;
+        // width: 100px;
+        color: #222;
+        border-radius: 0;
+        padding: 0 20px 0 8px;
+        margin-left: 10px;
+        border-radius: 10px;
+        margin-right: 12px;
+        
+        // hide defualut arrows in input form
+        -moz-appearance: textfield;
+    }
+    // hide defualut arrows in input form
+    .side-filter::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+    .toLabel {
+        margin-left: 3px;
+        margin-right: 3px;
+    }    
+
+
+    .auctionHouseInput{
+        margin-left: 10px;
+        padding-top: 15px;
+        width: 70%;
+        border: 2px solid #7a7a7a;
+        height: 35px;
+        padding: 0 0 0 5px;
+        border-radius: 10px;
+        font-size: 14px;
+
+    }
+
+    .inputSearch{
+        position: absolute;
+        // left: 565px;
+        left:66.5%;
+        padding-top: 3px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        font-size: 18px;
+        label{
+            margin-left: 5px;
+        }
+        input{
+        }
+    }
+    .auctionHouseNames{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .auctionHouseShowMore{
+        background-color: #fff;
+        border: none;
+        margin-left: 45px;
+        margin-bottom: 25px;
+        padding-top: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover{
+            color: blue;
+        }
+        .showMoreButton{
+            position: relative;
+            font-size: 17px;
+            top: 4px;
+            left: 3px;
+        }
+    }
+
+
+
+
+
+/* STYLE B */
+
+.checkbox.style-b {
+display: inline-block;
+position: relative;
+padding-left: 30px;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.checkbox.style-b input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.checkbox.style-b input:checked ~ .checkbox__checkmark {
+background-color: #fff;
+}
+.checkbox.style-b input:checked ~ .checkbox__checkmark:after {
+opacity: 1;
+}
+.checkbox.style-b:hover input ~ .checkbox__checkmark {
+background-color: #eee;
+}
+.checkbox.style-b:hover input:checked ~ .checkbox__checkmark {
+background-color: #fff;
+}
+.checkbox.style-b .checkbox__checkmark {
+position: absolute;
+top: 3px;
+left: 0;
+height: 18px;
+width: 18px;
+background-color: #fff;
+border: 2px solid #333;
+transition: background-color 0.25s ease;
+border-radius: 4px;
+}
+.checkbox.style-b .checkbox__checkmark:after {
+content: "";
+position: absolute;
+left: 5px;
+top: 1px;
+width: 5px;
+height: 10px;
+border: solid #333;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+opacity: 0;
+transition: opacity 0.25s ease;
+}
+.checkbox.style-b .checkbox__body {
+color: #333;
+line-height: 1.4;
+font-size: 16px;
+font-weight: bold;
+}
+
+}
+.filter-logo{
+    font-size: 13px;
+}
+.ui.button.filters-button {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: normal;
+    float: right;
+    cursor: pointer;
+    
+    @include xl{
+        display: none;
+    }
+    &:hover {
+        color: black;
+    }
+}
+
+.ui.button.filters-button::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    top: 23px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+    
+}
+.ui.button.filters-button:hover::before {
+    transform: scaleX(1);
+}

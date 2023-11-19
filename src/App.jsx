@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import 'semantic-ui-css/semantic.min.css'
 
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -19,7 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path="/explore/tv" element={<Details />} />
-        {/* <Route path="/search/:query" element={<SearchResult />} /> */}
+        <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/movie" element={<Explore />} />
         <Route path="/about" element={<SearchResult />} />
         <Route path="*" element={<PageNotFound />} />

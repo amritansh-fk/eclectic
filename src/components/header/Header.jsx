@@ -7,9 +7,10 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 // import logo from "../../assets/movix-logo.svg";
 
-const Header = ({activeTab}) => {
+const Header = ({activeTab, showLogo}) => {
     const [show, setShow] = useState("top");
     const [lastScrollY, setLastScrollY] = useState(0);
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -68,6 +69,20 @@ const Header = ({activeTab}) => {
     return (
         <header className={`header ${mobileMenu ? "mobileView" : "" } ${show}`}>
           {/* <ContentWrapper> */}
+            
+          {showLogo &&
+          <div className="brandVid" onClick={() => navigate("/")}>
+            <LazyLoadComponent>
+              <video className="brandVideo1" autoPlay muted playsInline  onMouseOver={event => event.target.play()}>
+                <source src="https://i.imgur.com/cZOHPKy.mp4" type="video/mp4" />
+              </video>
+            </LazyLoadComponent>
+          </div>
+          }
+
+
+
+
             <ul className="menuItems">
               
               <li className={`menuItem ${activeTab=='homeTab'?'activeTab3':''}`} onClick={() => navigationHandler("/")}>
