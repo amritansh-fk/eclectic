@@ -48,7 +48,8 @@ const HeroBanner = () => {
         <LazyLoadComponent>
           <video className="brandVideo1" autoPlay muted playsInline ref = {ref} onMouseOver={event => event.target.play()}>
             {/* <source src="https://i.imgur.com/gwIP9D4.mp4" type="video/mp4" /> */}
-            <source src="https://i.imgur.com/OIokYoa.mp4" type="video/mp4" />
+            {/* <source src="https://i.imgur.com/OIokYoa.mp4" type="video/mp4" /> */}
+            <source src="/logo_vid_upd.mp4" type="video/mp4" />
           </video>
         </LazyLoadComponent>
       </div>

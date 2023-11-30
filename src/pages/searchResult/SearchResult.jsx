@@ -200,15 +200,15 @@ const SearchResult = () => {
         </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
-          <Button color='red' onClick={() => setOpen(false)}>
+          <Button color='gray' onClick={() => setOpen(false)}>
             Cancel
           </Button>
           <Button
+            color='black'
             content="Apply"
             labelPosition='right'
             icon='checkmark'
             onClick={() => setOpen(false)}
-            positive
           />
         </Modal.Actions>
       </Modal>
