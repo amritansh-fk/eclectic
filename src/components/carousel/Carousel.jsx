@@ -78,8 +78,6 @@ const Carousel = ({ data, loading, endpoint, title }) => {
 
     const navigation = (dir) => {
         const container = carouselContainer.current;
-        console.log("****")
-        console.log(carouselContainer)
 
         const scrollAmount =
             dir === "left"
@@ -92,8 +90,6 @@ const Carousel = ({ data, loading, endpoint, title }) => {
         });
         // window.scrollTo(300, 500);
         // container.scrollTo(300,0);
-        console.log(scrollAmount);
-        console.log(container.offsetWidth + 20);
     };
     const [recentCards, setRecentCards] = useState(cardData);
     const showCards = recentCards.length!=0;

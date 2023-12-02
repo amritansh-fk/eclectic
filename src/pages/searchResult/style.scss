@@ -235,7 +235,8 @@
 
     }
     .searchCardsDiv {
-        max-width: 1200px;
+        // max-width: 1200px;
+        width: 1200px;
         margin: 0 auto;
         margin-left: 35px;
         margin-right: 20px;        
@@ -245,10 +246,24 @@
                 justify-content: space-between;
             }
             .filterAndSort{
-                display: flex;
+                display: flex !important;
                 justify-content: space-between;
                 @include md{
                     display: block;
+                }
+                .viewToggle{
+                    padding-top: 17px;
+                    font-size: 18px;
+                    display: none;
+                    @include md{
+                        display: block;
+                    }
+                    .gridLogo{
+                        margin-right: 24px;
+                    }
+                    .listLogo{
+                        margin-right: 24px;
+                    }
                 }
             }
         }
@@ -354,7 +369,7 @@
 }
 
 
-.ui.selection.dropdown {
+.ui.selection.dropdown.sortByDropdown {
     height: 1em;
     min-width: 7em;
     border:none;
@@ -364,7 +379,7 @@
 .ui.dropdown:not(.button)>.default.text {
     color: black;
 }
-.ui.selection.dropdown::before {
+.ui.selection.dropdown.sortByDropdown::before {
     content: "";
     position: relative;
     display: block;
@@ -378,38 +393,12 @@
     transform-origin: top left;
     transition: transform 0.3s ease;
 }
-.ui.selection.dropdown:hover::before {
+.ui.selection.dropdown.sortByDropdown:hover::before {
     transform: scaleX(1);
 }
 .filterBtn{
     // margin-left: -400px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -654,4 +643,31 @@ font-weight: bold;
 }
 .ui.button.filters-button:hover::before {
     transform: scaleX(1);
+}
+
+.ui.form .field {
+    margin: 0 10px 0;
+}
+
+.ui.selection.dropdown.ui.selection.year {
+    // background-color: pink;
+    min-width: 10px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    border: 2px solid #7a7a7a;
+    height: 40px;
+    width: 100%;
+    // width: 100px;
+    color: #222;
+    border-radius: 0;
+    padding: 0 20px 0 8px;
+    margin-left: 10px;
+    border-radius: 10px !important;
+    margin-right: 12px;
 }

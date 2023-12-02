@@ -43,13 +43,11 @@ const cardData = [
 
 
 const Card = (props) => {
-    console.log("HELLLLOOO")
     const {id,recentCards,name, setRecentCards} = props;
     const [show,setShow] = useState(true);
     const removeCard = (key) => {
         setRecentCards(recentCards.filter((data)=> data.id!=key))
     }
-    console.log(recentCards);
     
     return (
     <div className={`carouselItem${show ? "" : "hide" }` }>
@@ -57,7 +55,8 @@ const Card = (props) => {
             <Img src={cardimg} />
             <div className="textBlock">
                 <div className="price">{name}</div>
-                <div className="price">Hammer Price : £100</div>
+                <div className="price hammer">Hammer Price : £100</div>
+                <div className="price date">Date: 01/12/2023</div>
             </div>
         </div>
     </div>
