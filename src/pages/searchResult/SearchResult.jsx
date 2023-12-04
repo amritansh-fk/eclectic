@@ -108,7 +108,7 @@ const FilterSection = () => {
             
             <header className="filter-header">
               <h3>
-                <span>Estimate</span>
+                <span>Hammer Price</span>
               </h3>
             </header>
             <div class="container content">
@@ -163,8 +163,8 @@ const FilterSection = () => {
               
 
             
-
-            <header className="filter-header">
+            {/* Auction house container is being commented */}
+            {/* <header className="filter-header">
               <h3>
                 <span>Auction House</span>
               </h3>
@@ -239,6 +239,45 @@ const FilterSection = () => {
                   <IoIosArrowDropup className="showMoreButton"/>
                 </button>
                 }
+            </div> */}
+
+            <header className="filter-header">
+              <h3>
+                <span>Refine your search</span>
+              </h3>
+            </header>
+            <div class="container content">
+                <div className="auctionHouseNames">
+                    <ul>
+                      <li>
+                        <div class="checkboxes__item">
+                          <label class="checkbox style-b">
+                            <input type="checkbox"/>
+                            <div class="checkbox__checkmark"></div>
+                            <div class="checkbox__body">Exact phrase</div>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkboxes__item">
+                          <label class="checkbox style-b">
+                            <input type="checkbox"/>
+                            <div class="checkbox__checkmark"></div>
+                            <div class="checkbox__body">Include plurals</div>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="checkboxes__item">
+                          <label class="checkbox style-b">
+                            <input type="checkbox"/>
+                            <div class="checkbox__checkmark"></div>
+                            <div class="checkbox__body">Only lot with images</div>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -337,9 +376,10 @@ const SearchResult = () => {
           <div className="searchCardsDiv">
             <div className="topBar">
             <div className="pageTitle">
-                {`We found 6 search
-                    results
-                for '${query}'`}
+                {/* {`We found 6 search results for '${query}'`} */}
+                <span> We found </span>
+                <span className="countResult">6</span>
+                <span> search results for </span> <span>{`'${query}'`}</span>
             </div>
             <div className="filterAndSort">
               <Dropdown

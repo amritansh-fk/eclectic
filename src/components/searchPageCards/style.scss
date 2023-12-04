@@ -115,7 +115,8 @@
             }
             .price {
                 overflow:hidden;
-                white-space: nowrap; /* Don't forget this one */
+                // white-space: nowrap; /* Don't forget this one */
+                line-height:17px;
                 text-overflow: ellipsis;
                 /* Adjust the width of the pink divs */
                 border-radius: 17px;

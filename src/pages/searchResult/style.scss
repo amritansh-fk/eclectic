@@ -16,6 +16,9 @@
         @include md{
             font-size: 20px;
         }
+        .countResult{
+            font-weight: 900;
+        }
     }
     .content {
         flex-flow: row wrap;
@@ -538,6 +541,10 @@
             top: 4px;
             left: 3px;
         }
+    }
+
+    .containerYear {
+        margin-bottom: 30px;
     }
 
 
