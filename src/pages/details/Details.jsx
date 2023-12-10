@@ -7,6 +7,7 @@ import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import Header1 from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import Trending from '../../pages/home/trending/Trending';
+import DetailsCarousel from '../../components/detailsCarousel/DetailsCarousel';
 
 import { Breadcrumb, Divider } from 'semantic-ui-react'
 import "semantic-ui-css/components/breadcrumb.min.css";
@@ -70,6 +71,19 @@ const Details = () => {
               <div className="lotNumber"><div className="lot">LOT</div> <div className="number">995</div></div>
               <div className="lotBar"></div>
               <div className="lotName">A 19th century brass two-draw telescope, signed Alfred J Natalis & Co, London, leather bound, 36.5cm extending to 97cm long</div>
+            </div>
+            <div className="midSection">
+              <DetailsCarousel></DetailsCarousel>
+              <div className="itemDetails">
+                <div className="auctionDate"><div className="name">Auction Date:</div><div className="value">12 Jan 2023</div></div>
+                <div className="hammerPrice"><div className="name">Hammer Price:</div><div className="value">£100</div></div>
+                <div className="auctionName"><div className="name">Auction Name:</div><div className="value">The Collector's Grand Tour: Curated Objects, Interior Design, Curiosities and Works from the Library - 1022 Lots</div></div>
+                <div className="dividerLine"></div>
+                <div className="auctionHouseName"><div className="name">Auctioneer:</div><div className="value">The Derby Saleroom</div></div>
+                <div className="auctionHouseAddress"><div className="name">Address:</div><div className="value">46 Nottingham Road Spondon Derby Derbyshire DE21 7NL United Kingdom</div></div>
+                <div className="auctionHouseEmail"><div className="name">Telephone(s):</div><div className="value">01332210000</div></div>
+                <div className="auctionHousePhone"><div className="name">Email:</div><div className="value">sales@bamfords-auctions.co.uk</div></div>
+              </div>
             </div>
           </div>
         </ContentWrapper>

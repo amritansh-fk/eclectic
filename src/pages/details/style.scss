@@ -1,3 +1,4 @@
+@import "../../mixins.scss";
 .detailsPage {
     .dividerLine{
         margin: 15px 0 10px;
@@ -22,10 +23,16 @@
         .ui.breadcrumb{
             padding-left: 10px;
         }
+        .active, .dot:hover {
+            background-color: white;
+        }
     }
     .lotNameDiv{
         display: flex;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        @include md{
+            font-size: 1.8rem;
+        }
         overflow: hidden;
         text-transform: uppercase;
         font-weight: bold;
@@ -38,6 +45,44 @@
             border-left: 2px solid black;
             margin-left: 15px;
             margin-right: 15px;
+        }
+    }
+    .midSection{
+        display: block;
+        @include md{
+            display: flex;
+        }
+        .itemDetails{
+            padding: 65px 80px;
+        }
+        .name{
+            font-weight: lighter;
+        }
+        .value{
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        .auctionDate{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .hammerPrice{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .auctionName{
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .auctionHouseName{
+            margin-top: 35px;
+        }
+        .auctionHouseName, .auctionHouseAddress, .auctionHouseEmail, .auctionHousePhone{
+            display: flex;
+            margin-bottom: 20px;
+            .value{
+                font-weight: 500;
+            }
         }
     }
 }
