@@ -1,0 +1,43 @@
+.detailsPage {
+    .dividerLine{
+        margin: 15px 0 10px;
+        &::before {
+            content: "";
+            display: block;
+            top: 10px;
+            width: 100%;
+            border-top: 1px solid rgba(0,0,0,0.15);
+        }
+    }
+    .breadcrumDiv{
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        line-height: 1.1;
+        .back {
+            padding-right: 10px;
+            cursor: pointer;
+            color: #4183c4;
+        }
+        .ui.breadcrumb{
+            padding-left: 10px;
+        }
+    }
+    .lotNameDiv{
+        display: flex;
+        font-size: 1.8rem;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-weight: bold;
+        .lot{
+            font-weight: lighter;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .lotBar{
+            border-left: 2px solid black;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}

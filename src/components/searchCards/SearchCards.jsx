@@ -48,9 +48,10 @@ const Card = (props) => {
     const removeCard = (key) => {
         setRecentCards(recentCards.filter((data)=> data.id!=key))
     }
+    const navigate = useNavigate();
     
     return (
-    <div className={`carouselItem${show ? "" : "hide" }` }>
+    <div className={`carouselItem${show ? "" : "hide" }` } onClick={() => navigate(`/explore/item/${id}`)}>
         <div className="posterBlock">
             <Img src={cardimg} />
             <div className="textBlock">

@@ -360,7 +360,7 @@ const SearchResult = () => {
 
   return (
     <>
-      <Header1 activeTab={"priceGuide"} showLogo={true}></Header1>
+      <Header1 activeTab={"homeTab"} showLogo={true}></Header1>
       <div className="searchResultsPage">
         <div className="searchInput">
           <input type="text"

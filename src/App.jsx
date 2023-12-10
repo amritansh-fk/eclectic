@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path="/explore/tv" element={<Details />} />
+        <Route path="/explore/item/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/movie" element={<Explore />} />
         <Route path="/about" element={<SearchResult />} />
