@@ -34,7 +34,6 @@ import Header1 from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import SearchCards from '../../components/searchCards/SearchCards';
 import SearchPageCards from '../../components/searchPageCards/SearchPageCards';
-import PageDetail from '../../components/pageDetail/PageDetail'
 import Trending from '../../pages/home/trending/Trending';
 
 const sortByOptions = [
@@ -233,19 +232,11 @@ const SearchResult = () => {
                     </Accordion.Content>
                   </Accordion>
               <div className="dividerLine"></div>
-              {/* <PageDetail></PageDetail> */}
-              {/* <SearchPageCards data = {data}></SearchPageCards> */}
-                {/* <span> We found </span>
-                <span className="countResult">6</span>
-                <span> search results for </span> <span>{`'${query}'`}</span> */}
             </div>
             <div className="filterAndSort">
               <Dropdown
                 placeholder='Sort By'
-                // search
                 selection
-                // value="AVS"
-
                 icon='sort'
                 options={sortByOptions}
                 className="sortByDropdown"
