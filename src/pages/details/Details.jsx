@@ -79,11 +79,16 @@ const Details = () => {
                 <div className="hammerPrice"><div className="name">Hammer Price:</div><div className="value">£100</div></div>
                 <div className="auctionName"><div className="name">Auction Name:</div><div className="value">The Collector's Grand Tour: Curated Objects, Interior Design, Curiosities and Works from the Library - 1022 Lots</div></div>
                 <div className="dividerLine"></div>
+                <div className="itemDescription"><div className="name">Description:</div><div className="value">A 19th-century brass telescope with two draws for adjustability, bearing the signature of the manufacturer, Alfred J Natalis & Co., based in London. The telescope is leather-bound, and its length measures 36.5cm, extendable to 97cm. This antique item signifies a historical piece, appreciated for both its craftsmanship and functional design.</div></div>
+              </div>
+            </div>
+            <div className="bottomSection">
+                <div className="dividerLine"></div>
                 <div className="auctionHouseName"><div className="name">Auctioneer:</div><div className="value">The Derby Saleroom</div></div>
                 <div className="auctionHouseAddress"><div className="name">Address:</div><div className="value">46 Nottingham Road Spondon Derby Derbyshire DE21 7NL United Kingdom</div></div>
                 <div className="auctionHouseEmail"><div className="name">Telephone(s):</div><div className="value">01332210000</div></div>
                 <div className="auctionHousePhone"><div className="name">Email:</div><div className="value">sales@bamfords-auctions.co.uk</div></div>
-              </div>
+                <div className="dividerLine"></div>
             </div>
           </div>
         </ContentWrapper>

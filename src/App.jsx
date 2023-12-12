@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
+import Auction from "./pages/auction/Auction";
 import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/movie" element={<Explore />} />
         <Route path="/about" element={<SearchResult />} />
+        <Route path="/auction/:id" element={<Auction />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       {/* <Footer></Footer> */}

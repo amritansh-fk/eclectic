@@ -1,0 +1,54 @@
+@import "../../mixins.scss";
+.auctionTitle{
+    font-size: 16px;
+    line-height: 34px;
+    color: black;
+    margin-bottom: 25px;
+    margin-left: 25px auto;
+    @include md{
+        // font-size: 20px;
+    }
+    .countResult{
+        font-weight: 900;
+    }
+}
+    .topBar{
+        display: block !important;
+        .auctionHouseTitle{
+            color: #0074e0 !important;
+        }
+    }
+.filterAndSort{
+    margin-bottom: 20px;
+}
+.dividerLine {
+    margin: 15px 0 10px;
+    &::before {
+        content: "";
+        display: block;
+        top: 10px;
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,0.15);
+    }
+}
+.auctionTitle{
+    .auctionHouseName{
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+.active, .dot:hover {
+    background-color: #fff;
+}
+.accordionContent{
+    display: block;
+    @include md{
+        display: flex;
+    }
+    .itemDetails{
+        padding: 65px 80px;
+    }
+    .name{
+        font-weight: lighter;
+    }
+}

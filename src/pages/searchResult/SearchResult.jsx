@@ -287,20 +287,17 @@ const FilterSection = () => {
 }
 
 const SearchResult = () => {
-
   const { query } = useParams();
-
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate()
   const searchQueryHandler = (e) => {
-    if(e.key === 'Enter' && query.length > 0){
-      navigate(`/search/${query}`)
-      // alert("het")
+    if(e.key === 'Enter' && searchQuery.length > 0){
+      navigate(`/search/${searchQuery}`)
     }
   }
   const searchQueryHandlerButton = (e) => {
-    if(query.length > 0){
-      navigate(`/search/${query}`)
-      // alert("het")
+    if(searchQuery.length > 0){
+      navigate(`/search/${searchQuery}`)
     }
   }
 
@@ -366,7 +363,7 @@ const SearchResult = () => {
           <input type="text"
           placeholder='e.g Mickey Mouse, Lalique, Apothecary Cabinet' 
           onKeyUp={searchQueryHandler}
-          onChange = {(e) => setQuery(e.target.value)
+          onChange = {(e) => setSearchQuery(e.target.value)
           }
           />
           <button onClick={searchQueryHandlerButton}>Search</button>

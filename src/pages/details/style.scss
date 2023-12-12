@@ -49,7 +49,7 @@
     }
     .midSection{
         display: block;
-        @include md{
+        @include lg{
             display: flex;
         }
         .itemDetails{
@@ -77,11 +77,32 @@
         .auctionHouseName{
             margin-top: 35px;
         }
-        .auctionHouseName, .auctionHouseAddress, .auctionHouseEmail, .auctionHousePhone{
+        .auctionHouseName, .auctionHouseAddress, .auctionHouseEmail, .auctionHousePhone, .itemDescription{
             display: flex;
             margin-bottom: 20px;
             .value{
                 font-weight: 500;
+                line-height: 1.2em;
+            }
+        }
+    }
+    .bottomSection{
+        .itemDetails{
+            padding: 65px 80px;
+        }
+        .name{
+            font-weight: lighter;
+        }
+        .value{
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        .auctionHouseName, .auctionHouseAddress, .auctionHouseEmail, .auctionHousePhone, .itemDescription{
+            display: flex;
+            margin-bottom: 20px;
+            .value{
+                font-weight: 500;
+                line-height: 1.2em;
             }
         }
     }

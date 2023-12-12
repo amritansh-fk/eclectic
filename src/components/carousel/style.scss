@@ -116,6 +116,7 @@
             flex-shrink: 0;
             &:hover {
                 box-shadow: 14.1px 28.2px 28.2px hsl(0deg 0% 0% / 0.37);
+                transition: 0.5s;
             }
             .posterBlock {
                 position: relative;
