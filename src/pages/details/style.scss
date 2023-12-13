@@ -67,7 +67,9 @@
             margin-bottom: 20px;
         }
         .hammerPrice{
-            display: flex;
+            @include md{
+                display: flex;
+            }
             margin-bottom: 20px;
         }
         .auctionName{
