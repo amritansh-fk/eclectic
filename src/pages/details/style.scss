@@ -71,14 +71,18 @@
             margin-bottom: 20px;
         }
         .auctionName{
-            display: flex;
+            @include md{
+                display: flex;
+            }
             margin-bottom: 40px;
         }
         .auctionHouseName{
             margin-top: 35px;
         }
         .auctionHouseName, .auctionHouseAddress, .auctionHouseEmail, .auctionHousePhone, .itemDescription{
-            display: flex;
+            @include md{
+                display: flex;
+            }
             margin-bottom: 20px;
             .value{
                 font-weight: 500;
