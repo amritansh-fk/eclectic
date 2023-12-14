@@ -67,9 +67,15 @@
             margin-bottom: 20px;
         }
         .hammerPrice{
-            @include md{
+            // @include md{
                 display: flex;
-            }
+            // }
+            margin-bottom: 20px;
+        }
+        .estimatePrice{
+            // @include md{
+                display: flex;
+            // }
             margin-bottom: 20px;
         }
         .auctionName{

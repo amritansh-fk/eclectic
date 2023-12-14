@@ -77,6 +77,7 @@ const Details = () => {
               <div className="itemDetails">
                 <div className="auctionDate"><div className="name">Auction Date:</div><div className="value">12 Jan 2023</div></div>
                 <div className="hammerPrice"><div className="name">Hammer Price:</div><div className="value">£100</div></div>
+                <div className="estimatePrice"><div className="name">Estimate Price:</div><div className="value">£350</div></div>
                 <div className="auctionName"><div className="name">Auction Name:</div><div className="value">The Collector's Grand Tour: Curated Objects, Interior Design, Curiosities and Works from the Library - 1022 Lots</div></div>
                 <div className="dividerLine"></div>
                 <div className="itemDescription"><div className="name">Description:</div><div className="value">A 19th-century brass telescope with two draws for adjustability, bearing the signature of the manufacturer, Alfred J Natalis & Co., based in London. The telescope is leather-bound, and its length measures 36.5cm, extendable to 97cm. This antique item signifies a historical piece, appreciated for both its craftsmanship and functional design.</div></div>
