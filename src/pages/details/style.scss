@@ -53,7 +53,10 @@
             display: flex;
         }
         .itemDetails{
-            padding: 65px 80px;
+            padding: 0px 0px;
+            @include md{
+                padding: 65px 80px;
+            }
         }
         .name{
             font-weight: lighter;
