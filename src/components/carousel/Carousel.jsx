@@ -62,7 +62,7 @@ const Card = forwardRef((props, ref) => {
             <Img src={cardimg} />
             <div className="textBlock">
                 <div className="price">{name}</div>
-                <div className="price">Hammer Price : £100</div>
+                <div className="price hammer">Hammer Price : £100</div>
             </div>
         </div>
     </div>

@@ -214,7 +214,7 @@ const SearchResult = () => {
                 <div className="dividerLine"></div>
                 <div className="auctionHouseName">The Collector's Grand Tour: Curated Objects, Interior Design, Curiosities and Works from the Library - 1022 Lots</div>
                 <div className="auctionDate"><CiCalendarDate className="calendorIcon"/> 23 Nov 2023 10:00 GMT</div>
-                <div className="auctionLocation"><FaLocationDot className="locationIcon"/> London</div>
+                <div className="auctionLocation"><FaLocationDot className="locationIcon"/> Derby</div>
                 <Accordion>
                     <Accordion.Title
                       active={accordionShow}
@@ -225,8 +225,8 @@ const SearchResult = () => {
                       {!accordionShow ? "Show Auction house details": "Hide Auction house details"}
                     </Accordion.Title>
                     <Accordion.Content active={accordionShow} className="accordionContent">
-                      <div className="auctionHouseName1"><div className="name">Auctioneer:</div><div className="value">The Derby Saleroom</div></div>
-                      <div className="auctionHouseAddress"><div className="name">Address:</div><div className="value">46 Nottingham Road Spondon Derby Derbyshire DE21 7NL United Kingdom</div></div>
+                      <div className="auctionHouseName1"><div className="name">Auctioneer:</div><div className="value"><a className="auctionHouseLink" target="_blank" href="https://www.bamfords-auctions.co.uk/">Bamfords Auctioneers &amp; Valuers</a></div></div>
+                      <div className="auctionHouseAddress"><div className="name">Address:</div><div className="value">The Derby Saleroom 46 Nottingham Road Spondon Derby Derbyshire DE21 7NL United Kingdom</div></div>
                       <div className="auctionHouseEmail"><div className="name">Telephone(s):</div><div className="value"><FaPhone className="phoneIcon"/> 01332210000</div></div>
                       <div className="auctionHousePhone"><div className="name">Email:</div><div className="value"><MdOutlineMailOutline className="emailIcon"/> sales@bamfords-auctions.co.uk</div></div>
                     </Accordion.Content>

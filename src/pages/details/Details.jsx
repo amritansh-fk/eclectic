@@ -61,7 +61,7 @@ const Details = () => {
                 <Breadcrumb.Divider>/</Breadcrumb.Divider>
                 <Breadcrumb.Section link onClick={() => navigate(`/all-auctions/`)}>Auction Catalogues</Breadcrumb.Section>
                 <Breadcrumb.Divider>/</Breadcrumb.Divider>
-                <Breadcrumb.Section link onClick={() => navigate(`/auction-houses/4`)}>Ashley Waller Auctioneers</Breadcrumb.Section>
+                <Breadcrumb.Section link onClick={() => navigate(`/auction-houses/4`)}>Bamfords Auctioneers &amp; Valuers</Breadcrumb.Section>
                 <Breadcrumb.Divider>/</Breadcrumb.Divider>
                 <Breadcrumb.Section active link onClick={() => navigate(`/auction/44`)}>The Collector's Grand Tour: Curated Objects, Interior Design, Curiosities and Works from the Library - 1022 Lots</Breadcrumb.Section>
               </Breadcrumb>
@@ -85,8 +85,8 @@ const Details = () => {
             </div>
             <div className="bottomSection">
                 <div className="dividerLine"></div>
-                <div className="auctionHouseName"><div className="name">Auctioneer:</div><div className="value">The Derby Saleroom</div></div>
-                <div className="auctionHouseAddress"><div className="name">Address:</div><div className="value">46 Nottingham Road Spondon Derby Derbyshire DE21 7NL United Kingdom</div></div>
+                <div className="auctionHouseName"><div className="name">Auctioneer:</div><div className="value"><a className="auctionHouseLink" target="_blank" href="https://www.bamfords-auctions.co.uk/">Bamfords Auctioneers &amp; Valuers</a></div></div>
+                <div className="auctionHouseAddress"><div className="name">Address:</div><div className="value">The Derby Saleroom 46 Nottingham Road Spondon Derby Derbyshire DE21 7NL United Kingdom</div></div>
                 <div className="auctionHouseEmail"><div className="name">Telephone(s):</div><div className="value">01332210000</div></div>
                 <div className="auctionHousePhone"><div className="name">Email:</div><div className="value">sales@bamfords-auctions.co.uk</div></div>
                 <div className="dividerLine"></div>
