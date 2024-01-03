@@ -59,7 +59,7 @@ const Details = () => {
               <Breadcrumb className="breadcrumb">
                 <Breadcrumb.Section link onClick={() => navigate(`/`)}>Price Guide</Breadcrumb.Section>
                 <Breadcrumb.Divider>/</Breadcrumb.Divider>
-                <Breadcrumb.Section link onClick={() => navigate(`/all-auctions/`)}>Auction Catalogues</Breadcrumb.Section>
+                <Breadcrumb.Section link onClick={() => navigate(`/auction-houses/all`)}>Auction Catalogues</Breadcrumb.Section>
                 <Breadcrumb.Divider>/</Breadcrumb.Divider>
                 <Breadcrumb.Section link onClick={() => navigate(`/auction-houses/4`)}>Bamfords Auctioneers &amp; Valuers</Breadcrumb.Section>
                 <Breadcrumb.Divider>/</Breadcrumb.Divider>

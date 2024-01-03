@@ -58,7 +58,10 @@
             /* Adjust the margin as needed */
             background-color: #C0C0C0;
             /* Adjust the margin as needed */
-            width: 17%;
+            width: 40%;
+            @include md{
+                width: 17%;
+            }
             height: 100%;
             .lazy-load-image-background {
                 // position: absolute;
@@ -117,7 +120,7 @@
             .price {
                 overflow:hidden;
                 // white-space: nowrap; /* Don't forget this one */
-                line-height:17px;
+                line-height:18px;
                 text-overflow: ellipsis;
                 /* Adjust the width of the pink divs */
                 border-radius: 17px;
