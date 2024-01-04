@@ -1,7 +1,7 @@
 import React from "react";
 import  { useRef, forwardRef, useState } from "react";
 import dayjs from "dayjs";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import "./style.scss";
@@ -50,6 +50,8 @@ const Card = (props) => {
         setRecentCards(recentCards.filter((data)=> data.id!=key))
     }
     const navigate = useNavigate()
+    const location = useLocation();
+    const showAllAuctions = location.pathname === "/auction-houses/all"
     
     return (
     <div className={`carouselItem${show ? "" : "hide" }` } onClick={() => showHammerPrice ? navigate(`/explore/item/${id}`):navigate(`/auction/44`)}>
@@ -62,7 +64,7 @@ const Card = (props) => {
             <div className="price">Date: <div className="name">{showHammerPrice ? "01/12/2023":"01/12/2023 10:00 GMT"}</div></div>
             {showHammerPrice && <div className="price">Lot 235</div>}
             {showHammerPrice && <div className="price">Estimate : <div className="name">£100</div></div>}
-            {showHammerPrice && <div className="price">Chalkwell Auctions</div>}
+            {(showHammerPrice || showAllAuctions) && <div className="price">Chalkwell Auctions</div>}
             {!showHammerPrice && <div className="price"><FaLocationDot className="locationIcon" style={{marginRight:"5px"}} /><div className="name">Derby</div></div>}
         </div>
     </div>
