@@ -98,8 +98,8 @@ const Header = ({activeTab, showLogo}) => {
                 About Us
               </li>
               
-              <button className="signUpBtn signBtn" onClick={handleSignUp}>Sign Up</button>
-              <button className="signInBtn signBtn">Sign In</button>
+              <button className="signUpBtn signBtn" onClick={() => navigate("/sign-in")}>Sign Up</button>
+              <button className="signInBtn signBtn" onClick={() => navigate("/sign-in")}>Sign In</button>
             </ul>
             <div className="mobileMenuItems">
               { mobileMenu ? <VscChromeClose onClick={()=> setMobileMenu(false)}/> : <SlMenu onClick={openMobileMenu} />}
