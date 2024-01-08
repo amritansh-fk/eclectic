@@ -10,47 +10,47 @@
   --first-color-lighten: #f2f2f2;
 
   /*===== Font and typography =====*/
-  --body-font: "Open Sans", sans-serif;
-  --h1-font-size: 1.5rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
+  // --body-font: "Open Sans", sans-serif;
+  // --h1-font-size: 1.5rem;
+  // --normal-font-size: 0.938rem;
+  // --small-font-size: 0.813rem;
 }
 
-@media screen and (min-width: 768px) {
-  :root {
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   :root {
+//     --normal-font-size: 1rem;
+//     --small-font-size: 0.875rem;
+//   }
+// }
 
 /*===== BASE =====*/
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+// *,
+// ::before,
+// ::after {
+//   box-sizing: border-box;
+// }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--first-color-dark);
-}
+// body {
+//   margin: 0;
+//   padding: 0;
+//   font-family: var(--body-font);
+//   font-size: var(--normal-font-size);
+//   color: var(--first-color-dark);
+// }
 
-h1 {
-  margin: 0;
-}
+// h1 {
+//   margin: 0;
+// }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+//   display: block;
+// }
 
 /*===== LOGIN =====*/
 .login {
@@ -273,11 +273,11 @@ img {
     --first-color-lighten: #F2F2F2;
 
     /*===== Font and typography =====*/
-    --body-font: 'Open Sans', sans-serif;
+    // --body-font: 'Open Sans', sans-serif;
     
     --h1-font-size: 1.5rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
+    // --normal-font-size: .938rem;
+    // --small-font-size: .813rem;
 
     @media screen and (min-width: 768px){
         --normal-font-size: 1rem;
@@ -285,30 +285,30 @@ img {
     }
 }
 
-/*===== BASE =====*/
-*,::before,::after{
-    box-sizing: border-box;
-}
+// /*===== BASE =====*/
+// *,::before,::after{
+//     box-sizing: border-box;
+// }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);       
-    color: var(--first-color-dark);
-}
-h1{
-    margin: 0;  
-}
+// body{
+//     margin: 0;
+//     padding: 0;
+//     font-family: var(--body-font);
+//     font-size: var(--normal-font-size);       
+//     color: var(--first-color-dark);
+// }
+// h1{
+//     margin: 0;  
+// }
 
-a{
-    text-decoration: none;
-}
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+// a{
+//     text-decoration: none;
+// }
+// img{
+//     max-width: 100%;
+//     height: auto;
+//     display: block;
+// }
 
 /*===== LOGIN=====*/
 .login{
